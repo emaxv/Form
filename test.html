@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>HTML5 JQuery AJAX</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+ </head>
+ <body>
+   <input id="t" type="button" value="кнопка">
+   <button id="te">knopka</button>
+   
+   <input id="ch" name="ch">
+ </body>
+  <script> var i=1;
+    $("#t").click(function(){
+    
+      $("body").append("<input type='text' id="+i+" class='form-control'>")
+      i++;
+      console.log(i)
+        })
+    $(".ch").value("test")
+   </script>
+</html>

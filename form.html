@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+</head>
+<script>
+// $("body").append( "<input class='form-control' placeholder= 'Введите нижний предел интегрирования' id=np >" )
+
+function test() {
+    var tm=[];
+    var gr = document.getElementsByName('ch');
+  for(var i=0; i<gr.length; i++)
+    if (gr[i].checked) {
+      tm.push(gr[i].value);
+    } 
+    console.log(tm);
+}
+$("#te").append("<input class='form-control'>")
+</script>
+<body>
+    <form method="post">
+        <input class="col-md-1" min="0" type="number" name="protocol"/><!--Протокол -->
+        <input class="form-control" type="text" name="date"/><!--Дата -->
+        <input class="form-control" type="text" name="people1"/><!--Присутсвующие -->
+        <input class="form-control" type="text" name="aims"/><!--Поветска дня -->
+        <input class="form-control" type="text" name="people2"/><!--Выступили -->
+        <input class="form-control" type="text" name="numquest"/><!--№ Вопроса -->
+        <button id="te">кнопка</button>
+        <input class="form-control" type="text" name="question"/><!--Вопрос-->
+        <input type="submit" value="Submit" onClick="test();"/><!--Кнопка отправки-->
+        <input type="checkbox" value="a" name="ch">a
+        <input type="checkbox" value="b" name="ch">b
+        <input type="checkbox" value="c" name="ch">c
+    </form>
+
+
+
+</body>
+</html>
